@@ -1,11 +1,12 @@
 # Meu Portfólio
 
-Portfólio pessoal desenvolvido com HTML e CSS para apresentar meus projetos, habilidades e trajetória na área de desenvolvimento de software.
+Portfólio pessoal desenvolvido com HTML, CSS e Java Script para apresentar meus projetos, habilidades e trajetória na área de desenvolvimento de software.
 
 ## Tecnologias Utilizadas
 
 - HTML5
 - CSS3
+-Java Script
 
 ## Objetivo
 

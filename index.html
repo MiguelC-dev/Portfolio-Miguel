@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Miguel</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,132 +26,136 @@
             </li>
         </ul>
     </nav>
-   <main id="inicio" class="cabecalho">
+    <main id="inicio" class="cabecalho">
 
-    <div class="hero">
+        <div class="hero">
 
-        <div class="hero-texto">
-            <h1>Miguel Correia</h1>
+            <div class="hero-texto">
+                <h1>Miguel Correia</h1>
 
-            <p class="cabecalho-subtitulo">
-                Estudante de Desenvolvimento de Software Multiplataforma
-            </p>
+                <p class="cabecalho-subtitulo">
+                    Estudante da Fatec de Desenvolvimento de Software Multiplataforma
+                </p>
+            </div>
+
+            <img src="img/FotoMiguel.png" alt="Foto de Miguel" class="foto-perfil">
+
         </div>
 
-        <img src="img/FotoMiguel.png" alt="Foto de Miguel" class="foto-perfil">
+    </main>
 
-    </div>
+    <section id="sobre" class="sobre">
 
-</main>
+        <h2 class="sobre-titulo">Sobre Mim</h2>
 
-<section id="sobre" class="sobre">
+        <div class="sobre-caixa">
 
-    <h2 class="sobre-titulo">Sobre Mim</h2>
+            <p class="sobre-texto">
+                Meu nome é Miguel Correia e sou estudante de Desenvolvimento de Software Multiplataforma. Gosto de
+                aprender sobre tecnologia, desenvolver projetos e buscar soluções para problemas por meio da
+                programação. Este portfólio reúne alguns dos trabalhos e conhecimentos que venho adquirindo durante
+                minha trajetória de aprendizado.
+            </p>
 
-    <div class="sobre-caixa">
+        </div>
 
-        <p class="sobre-texto">
-            Meu nome é Miguel Correia e sou estudante de Desenvolvimento de Software Multiplataforma. Gosto de aprender sobre tecnologia, desenvolver projetos e buscar soluções para problemas por meio da programação. Este portfólio reúne alguns dos trabalhos e conhecimentos que venho adquirindo durante minha trajetória de aprendizado.
-        </p>
+    </section>
 
-    </div>
+    <section id="projetos">
 
-</section>
+        <h2>Projetos</h2>
 
-<section id="projetos">
+        <div class="cards">
 
-    <h2>Projetos</h2>
+            <div class="card">
+                <img src="img/ProjetoGameSphere.png" alt="Game Sphere">
 
-    <div class="cards">
+                <h3>Game Sphere</h3>
 
-        <div class="card">
+                <p>
+                    Plataforma sobre jogos desenvolvida como projeto acadêmico.
+                </p>
+                <button onclick="abrirModal()">Ler mais</button>
+            </div>
+
+            <div class="card">
+                <h3>Em breve</h3>
+
+                <p>
+                    Novos projetos serão adicionados futuramente.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Em breve</h3>
+
+                <p>
+                    Novos projetos serão adicionados futuramente.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="modal" class="modal">
+
+        <div class="modal-conteudo">
+
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+
             <img src="img/ProjetoGameSphere.png" alt="Game Sphere">
 
-            <h3>Game Sphere</h3>
+            <h2>Game Sphere</h2>
 
             <p>
-                Plataforma sobre jogos desenvolvida como projeto acadêmico.
+                Projeto acadêmico desenvolvido para apresentar notícias sobre jogos
+                em uma interface moderna e responsiva. O projeto foi criado utilizando
+                HTML e CSS com foco na experiência do usuário.
             </p>
-            <button onclick="abrirModal()">Ler mais</button>
-        </div>
 
-        <div class="card">
-            <h3>Em breve</h3>
+            <div class="links-projeto">
+                <a href="https://github.com/MiguelC-dev/game-sphere" target="_blank">GitHub</a>
+                <a href="https://miguelc-dev.github.io/game-sphere/" target="_blank">Ver Site</a>
+            </div>
 
-            <p>
-                Novos projetos serão adicionados futuramente.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Em breve</h3>
-
-            <p>
-                Novos projetos serão adicionados futuramente.
-            </p>
         </div>
 
     </div>
 
-</section>
+    <section id="contato">
 
-<div id="modal" class="modal">
+        <h2>Contato</h2>
 
-    <div class="modal-conteudo">
+        <form class="form-contato">
 
-        <span class="fechar" onclick="fecharModal()">&times;</span>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required maxlength="50">
 
-        <img src="img/ProjetoGameSphere.png" alt="Game Sphere">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu email" required maxlength="80">
 
-        <h2>Game Sphere</h2>
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" placeholder="Digite o assunto" required maxlength="100">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem" required maxlength="500"></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </section>
+
+    <footer class="rodape">
 
         <p>
-            Projeto acadêmico desenvolvido para apresentar notícias sobre jogos
-            em uma interface moderna e responsiva. O projeto foi criado utilizando
-            HTML e CSS com foco na experiência do usuário.
+            © 2026 Miguel Correia. Todos os direitos reservados.
         </p>
 
-        <div class="links-projeto">
-            <a href="https://github.com/MiguelC-dev/game-sphere" target="_blank">GitHub</a>
-            <a href="https://miguelc-dev.github.io/game-sphere/" target="_blank">Ver Site</a>
-        </div>
+    </footer>
 
-    </div>
+    <script src="script.js"></script>
+</body>
 
-</div>
-
-<section id="contato">
-
-    <h2>Contato</h2>
-
-    <form class="form-contato">
-
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Digite seu nome">
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Digite seu email">
-
-        <label for="assunto">Assunto</label>
-        <input type="text" id="assunto" placeholder="Digite o assunto">
-
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
-
-        <button type="submit">Enviar</button>
-
-    </form>
-
-</section>
-
-<footer class="rodape">
-
-    <p>
-        © 2026 Miguel Correia. Todos os direitos reservados.
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-    </body>
 </html>

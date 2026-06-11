@@ -10,10 +10,11 @@
 
 html{
     scroll-behavior:smooth;
+    scroll-padding-top: 120px;
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(
         180deg,
         #0d2f6d 0%,
@@ -171,15 +172,10 @@ body{
 
 .card{
     width: 400px;
-
     background:#111827;
-
     border-radius:15px;
-
     overflow:hidden;
-
     transition:.3s;
-
     box-shadow:0 0 20px rgba(0,0,0,.5);
 }
 
@@ -204,17 +200,11 @@ body{
 
 .card button{
     margin:20px;
-
     padding:10px 20px;
-
     border:none;
-
     border-radius:8px;
-
     background:#2563eb;
-
     color:white;
-
     cursor:pointer;
 }
 
@@ -247,13 +237,9 @@ body{
 
     width:90%;
     max-width:700px;
-
     padding:30px;
-
     border-radius:15px;
-
     position:relative;
-
     text-align:center;
 }
 
@@ -361,9 +347,7 @@ body{
 
 .rodape{
     margin-top:100px;
-
     padding: 35px 20px;
-
     text-align:center;
 
     background: linear-gradient(
